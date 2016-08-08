@@ -1,0 +1,37 @@
+*******************************************************
+Version 2 Documentation
+CSCI 200/201, Tuesday 1, Spring 2011
+*******************************************************
+
+----------------------------------------------
+I. The scenario
+----------------------------------------------
+The whole factory combined with non-normative scenarios
+
+----------------------------------------------
+II. How to run it
+----------------------------------------------
+1. Start Application.java
+
+----------------------------------------------
+III. Non-Normative Scenario
+----------------------------------------------
+GlassRobot: Glass get flung away like frisbee
+Breakout: Glass breaks
+Transfers: Glass goes the wrong direction and breaks
+Popups: Glass shoots upwards toward the screen
+WorkStations: Glass goes in to work station and breaks
+
+Earthquake : All glasses break
+NyanCat: a cat flies over
+Deathstar: A death star appears when the end truck transfer the glasses.
+
+----------------------------------------------
+IV. Bugs
+----------------------------------------------
+1. Sometimes TransferAgent has problems transferring. This happens rarely.
+2. Sometimes ManualBreakOutAgent has problems manually breaking out. This happens sometimes in odd occurances. It works better on Windows with Java 1.6 support.
+3. Sometimes the stations & the GlassRobot might stop in odd occurances.
+4. Toggling non-normative scenario buttons constantly might break Agent/GUI functionality.
+
+Also, we tested our factory for 100 glasses, as shown here: http://www.harmanradix.com/100glasses/

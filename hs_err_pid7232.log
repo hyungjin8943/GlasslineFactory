@@ -1,0 +1,243 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x101ee9c5, pid=7232, tid=8548
+#
+# JRE version: 6.0_24-b07
+# Java VM: Java HotSpot(TM) Client VM (19.1-b02 mixed mode, sharing windows-x86 )
+# Problematic frame:
+# C  [nvd3dum.dll+0x1ee9c5]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x020d4400):  JavaThread "AWT-Windows" daemon [_thread_in_native, id=8548, stack(0x048f0000,0x04940000)]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x04c88000
+
+Registers:
+EAX=0x04c88000, EBX=0x051266f4, ECX=0x00000169, EDX=0x00000000
+ESP=0x0493f690, EBP=0x04c70000, ESI=0x04c88000, EDI=0x0511c000
+EIP=0x101ee9c5, EFLAGS=0x00010246
+
+Register to memory mapping:
+
+EAX=0x04c88000
+0x04c88000 is pointing to unknown location
+
+EBX=0x051266f4
+0x051266f4 is pointing to unknown location
+
+ECX=0x00000169
+0x00000169 is pointing to unknown location
+
+EDX=0x00000000
+0x00000000 is pointing to unknown location
+
+ESP=0x0493f690
+0x0493f690 is pointing into the stack for thread: 0x020d4400
+"AWT-Windows" daemon prio=6 tid=0x020d4400 nid=0x2164 runnable [0x0493f000]
+   java.lang.Thread.State: RUNNABLE
+
+EBP=0x04c70000
+0x04c70000 is pointing to unknown location
+
+ESI=0x04c88000
+0x04c88000 is pointing to unknown location
+
+EDI=0x0511c000
+0x0511c000 is pointing to unknown location
+
+
+Top of Stack: (sp=0x0493f690)
+0x0493f690:   00000000 00000004 1019baae 00000000
+0x0493f6a0:   00000070 0511c000 0493f6f4 00000000
+0x0493f6b0:   101e17cf 056a4380 06a6fc00 00000000
+0x0493f6c0:   00000000 00000000 06b15ec0 00000000
+0x0493f6d0:   71f04852 0511c000 0493f6e4 00000004
+0x0493f6e0:   06b15ec0 00000004 00000000 00000000
+0x0493f6f0:   00000000 0493f724 71f045b0 06b37d54
+0x0493f700:   06b15ec0 06ae2e20 00000004 77065883 
+
+Instructions: (pc=0x101ee9c5)
+0x101ee9b5:   c6 01 89 b2 80 00 00 00 33 d2 8d 44 c5 00 8b f0
+0x101ee9c5:   89 16 89 56 04 89 56 08 89 56 0c 89 56 10 89 56 
+
+
+Stack: [0x048f0000,0x04940000],  sp=0x0493f690,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [nvd3dum.dll+0x1ee9c5]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.awt.windows.WToolkit.eventLoop()V+0
+j  sun.awt.windows.WToolkit.run()V+52
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x08dda400 JavaThread "D3D Screen Updater" daemon [_thread_blocked, id=8296, stack(0x04a80000,0x04ad0000)]
+  0x08dd9c00 JavaThread "DestroyJavaVM" [_thread_blocked, id=9888, stack(0x003a0000,0x003f0000)]
+  0x08dd9800 JavaThread "TimerQueue" daemon [_thread_blocked, id=1996, stack(0x09d40000,0x09d90000)]
+  0x08dd9000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=6108, stack(0x09cf0000,0x09d40000)]
+  0x08dd8c00 JavaThread "AWT-Shutdown" [_thread_blocked, id=7560, stack(0x09ca0000,0x09cf0000)]
+  0x08dd8400 JavaThread "End" [_thread_blocked, id=7032, stack(0x09c50000,0x09ca0000)]
+  0x08dd8000 JavaThread "Truck" [_thread_blocked, id=1924, stack(0x09c00000,0x09c50000)]
+  0x08dd7800 JavaThread "Oven" [_thread_blocked, id=8832, stack(0x09bb0000,0x09c00000)]
+  0x08dd7400 JavaThread "Conveyor4_2" [_thread_blocked, id=4532, stack(0x09b60000,0x09bb0000)]
+  0x08dd6c00 JavaThread "Conveyor4_1" [_thread_blocked, id=3408, stack(0x09b10000,0x09b60000)]
+  0x08dd6800 JavaThread "TransferMediator3" [_thread_blocked, id=10060, stack(0x09ac0000,0x09b10000)]
+  0x08dd6000 JavaThread "UV Lamp" [_thread_blocked, id=8184, stack(0x09a70000,0x09ac0000)]
+  0x08dd5c00 JavaThread "Washer" [_thread_blocked, id=5580, stack(0x09a20000,0x09a70000)]
+  0x08dd5400 JavaThread "Conveyor - 3C" [_thread_blocked, id=9628, stack(0x099d0000,0x09a20000)]
+  0x08dd5000 JavaThread "Conveyor - 3B" [_thread_blocked, id=5676, stack(0x09980000,0x099d0000)]
+  0x08dd4800 JavaThread "Conveyor - 3A" [_thread_blocked, id=6140, stack(0x09930000,0x09980000)]
+  0x08dd4400 JavaThread "TransferPart2To3" [_thread_blocked, id=1312, stack(0x098e0000,0x09930000)]
+  0x08dd3c00 JavaThread "PopupPart2_4" [_thread_blocked, id=2552, stack(0x09890000,0x098e0000)]
+  0x08dd3800 JavaThread "Grinder 2" [_thread_blocked, id=9748, stack(0x09840000,0x09890000)]
+  0x08dd3000 JavaThread "OperatorPart2_6" [_thread_blocked, id=7400, stack(0x097f0000,0x09840000)]
+  0x08dd2c00 JavaThread "ConveyorPart2_5" [_thread_blocked, id=7092, stack(0x097a0000,0x097f0000)]
+  0x08bf1c00 JavaThread "Manual Breakout" [_thread_blocked, id=10020, stack(0x09750000,0x097a0000)]
+  0x08bf1400 JavaThread "TruckPart2_6" [_thread_blocked, id=8704, stack(0x09700000,0x09750000)]
+  0x08bf1000 JavaThread "Paint" [_thread_blocked, id=9600, stack(0x096b0000,0x09700000)]
+  0x08bf0800 JavaThread "Grinder" [_thread_blocked, id=2644, stack(0x09660000,0x096b0000)]
+  0x08bf0400 JavaThread "Drill" [_thread_blocked, id=5508, stack(0x09610000,0x09660000)]
+  0x08befc00 JavaThread "Cross Seamer" [_thread_blocked, id=6396, stack(0x095c0000,0x09610000)]
+  0x08bef800 JavaThread "TruckPart2_3" [_thread_blocked, id=8316, stack(0x09570000,0x095c0000)]
+  0x08bef000 JavaThread "TruckPart2_4" [_thread_blocked, id=3028, stack(0x09520000,0x09570000)]
+  0x08beec00 JavaThread "TruckPart2_2" [_thread_blocked, id=1664, stack(0x094d0000,0x09520000)]
+  0x08bee400 JavaThread "TruckPart2_1" [_thread_blocked, id=5880, stack(0x09480000,0x094d0000)]
+  0x08bee000 JavaThread "OperatorPart2_4" [_thread_blocked, id=4380, stack(0x09430000,0x09480000)]
+  0x08bed800 JavaThread "OperatorPart2_3" [_thread_blocked, id=8744, stack(0x093e0000,0x09430000)]
+  0x08bed400 JavaThread "OperatorPart2_2" [_thread_blocked, id=6972, stack(0x09390000,0x093e0000)]
+  0x08becc00 JavaThread "OperatorPart2_1" [_thread_blocked, id=8280, stack(0x09340000,0x09390000)]
+  0x08bec800 JavaThread "PopupPart2_2" [_thread_blocked, id=4636, stack(0x092f0000,0x09340000)]
+  0x08bec000 JavaThread "PopupPart2_1" [_thread_blocked, id=8444, stack(0x092a0000,0x092f0000)]
+  0x08bebc00 JavaThread "ConveyorPart2_3" [_thread_blocked, id=5116, stack(0x09250000,0x092a0000)]
+  0x08beb400 JavaThread "ConveyorPart2_2" [_thread_blocked, id=9072, stack(0x09200000,0x09250000)]
+  0x08beb000 JavaThread "ConveyorPart2_1" [_thread_blocked, id=5796, stack(0x091b0000,0x09200000)]
+  0x08bea800 JavaThread "Conveyor - 1C" [_thread_blocked, id=2328, stack(0x09160000,0x091b0000)]
+  0x08bea400 JavaThread "Conveyor - 1B" [_thread_blocked, id=5728, stack(0x09110000,0x09160000)]
+  0x089da000 JavaThread "Conveyor - 1A" [_thread_blocked, id=7624, stack(0x090c0000,0x09110000)]
+  0x089d7800 JavaThread "Transfer 1" [_thread_blocked, id=7004, stack(0x09070000,0x090c0000)]
+  0x089d7400 JavaThread "Breakout" [_thread_blocked, id=4116, stack(0x09020000,0x09070000)]
+  0x08932800 JavaThread "NC_Cutter" [_thread_blocked, id=10088, stack(0x08fd0000,0x09020000)]
+  0x08932000 JavaThread "Glass Robot" [_thread_blocked, id=9400, stack(0x08f80000,0x08fd0000)]
+=>0x020d4400 JavaThread "AWT-Windows" daemon [_thread_in_native, id=8548, stack(0x048f0000,0x04940000)]
+  0x020d1800 JavaThread "Java2D Disposer" daemon [_thread_in_native, id=5780, stack(0x04850000,0x048a0000)]
+  0x02081c00 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=4732, stack(0x04290000,0x042e0000)]
+  0x0207c400 JavaThread "CompilerThread0" daemon [_thread_blocked, id=6672, stack(0x04240000,0x04290000)]
+  0x0207b400 JavaThread "Attach Listener" daemon [_thread_blocked, id=6536, stack(0x041f0000,0x04240000)]
+  0x0207a800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5368, stack(0x041a0000,0x041f0000)]
+  0x02070000 JavaThread "Finalizer" daemon [_thread_blocked, id=9016, stack(0x04150000,0x041a0000)]
+  0x0206b400 JavaThread "Reference Handler" daemon [_thread_blocked, id=9712, stack(0x04100000,0x04150000)]
+
+Other Threads:
+  0x0202fc00 VMThread [stack: 0x01b90000,0x01be0000] [id=8248]
+  0x02091800 WatcherThread [stack: 0x042e0000,0x04330000] [id=4648]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 28096K, used 832K [0x24000000, 0x25e70000, 0x29550000)
+  eden space 25024K,   3% used [0x24000000, 0x240d0010, 0x25870000)
+  from space 3072K,   0% used [0x25870000, 0x25870000, 0x25b70000)
+  to   space 3072K,   0% used [0x25b70000, 0x25b70000, 0x25e70000)
+ tenured generation   total 61940K, used 37163K [0x29550000, 0x2d1cd000, 0x34000000)
+   the space 61940K,  59% used [0x29550000, 0x2b99ac38, 0x2b99ae00, 0x2d1cd000)
+ compacting perm gen  total 12288K, used 2515K [0x34000000, 0x34c00000, 0x38000000)
+   the space 12288K,  20% used [0x34000000, 0x34274d68, 0x34274e00, 0x34c00000)
+    ro space 10240K,  51% used [0x38000000, 0x3852cf58, 0x3852d000, 0x38a00000)
+    rw space 12288K,  54% used [0x38a00000, 0x39098f50, 0x39099000, 0x39600000)
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x77000000 - 0x77127000 	C:\Windows\system32\ntdll.dll
+0x75ca0000 - 0x75d7b000 	C:\Windows\system32\kernel32.dll
+0x75900000 - 0x759c6000 	C:\Windows\system32\ADVAPI32.dll
+0x76250000 - 0x76312000 	C:\Windows\system32\RPCRT4.dll
+0x76f40000 - 0x76fdd000 	C:\Windows\system32\USER32.dll
+0x75b20000 - 0x75b6b000 	C:\Windows\system32\GDI32.dll
+0x76fe0000 - 0x76ffe000 	C:\Windows\system32\IMM32.DLL
+0x75b70000 - 0x75c38000 	C:\Windows\system32\MSCTF.dll
+0x76090000 - 0x7613a000 	C:\Windows\system32\msvcrt.dll
+0x77240000 - 0x77249000 	C:\Windows\system32\LPK.DLL
+0x75880000 - 0x758fd000 	C:\Windows\system32\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d7f0000 - 0x6da96000 	C:\Program Files\Java\jre6\bin\client\jvm.dll
+0x737c0000 - 0x737f2000 	C:\Windows\system32\WINMM.dll
+0x759d0000 - 0x75b14000 	C:\Windows\system32\ole32.dll
+0x76140000 - 0x761cd000 	C:\Windows\system32\OLEAUT32.dll
+0x73780000 - 0x737b9000 	C:\Windows\system32\OLEACC.dll
+0x756b0000 - 0x756dc000 	C:\Windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files\Java\jre6\bin\java.dll
+0x6d280000 - 0x6d288000 	C:\Program Files\Java\jre6\bin\hpi.dll
+0x757e0000 - 0x757e7000 	C:\Windows\system32\PSAPI.DLL
+0x6d7e0000 - 0x6d7ef000 	C:\Program Files\Java\jre6\bin\zip.dll
+0x6d000000 - 0x6d14a000 	C:\Program Files\Java\jre6\bin\awt.dll
+0x73410000 - 0x73452000 	C:\Windows\system32\WINSPOOL.DRV
+0x747f0000 - 0x7498e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.6001.18523_none_5cdd65e20837faf2\COMCTL32.dll
+0x75c40000 - 0x75c98000 	C:\Windows\system32\SHLWAPI.dll
+0x73480000 - 0x7348c000 	C:\Windows\system32\DWMAPI.DLL
+0x74560000 - 0x7459f000 	C:\Windows\system32\uxtheme.dll
+0x723e0000 - 0x72449000 	C:\Windows\system32\IMKR12.IME
+0x76320000 - 0x76e2f000 	C:\Windows\system32\SHELL32.dll
+0x72150000 - 0x721eb000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d08d7da0442a985d\MSVCR80.dll
+0x720c0000 - 0x72147000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d08d7da0442a985d\MSVCP80.dll
+0x6d230000 - 0x6d27f000 	C:\Program Files\Java\jre6\bin\fontmanager.dll
+0x71f00000 - 0x720ba000 	C:\Windows\system32\d3d9.dll
+0x74ba0000 - 0x74ba8000 	C:\Windows\system32\VERSION.dll
+0x724b0000 - 0x724b6000 	C:\Windows\system32\d3d8thk.dll
+0x10000000 - 0x1054e000 	C:\Windows\system32\nvd3dum.dll
+0x6d600000 - 0x6d613000 	C:\Program Files\Java\jre6\bin\net.dll
+0x76f10000 - 0x76f3d000 	C:\Windows\system32\WS2_32.dll
+0x77130000 - 0x77136000 	C:\Windows\system32\NSI.dll
+0x74ec0000 - 0x74efb000 	C:\Windows\system32\mswsock.dll
+0x74f30000 - 0x74f35000 	C:\Windows\System32\wship6.dll
+0x6d620000 - 0x6d629000 	C:\Program Files\Java\jre6\bin\nio.dll
+0x048a0000 - 0x048b0000 	C:\Program Files\NATEON\BIN\NateOnHook40u.dll
+0x76e80000 - 0x76f04000 	C:\Windows\system32\CLBCatQ.DLL
+0x6f840000 - 0x6f8da000 	C:\PROGRA~1\COMMON~1\MICROS~1\IME12\IMEKR\IMKRTIP.DLL
+0x6f6e0000 - 0x6f785000 	C:\PROGRA~1\COMMON~1\MICROS~1\IME12\SHARED\IMETIP.DLL
+0x6f810000 - 0x6f832000 	C:\PROGRA~1\COMMON~1\MICROS~1\IME12\IMEKR\IMKRAPI.DLL
+0x6f7e0000 - 0x6f80c000 	C:\PROGRA~1\COMMON~1\MICROS~1\IME12\SHARED\IMJKAPI.DLL
+0x09f00000 - 0x09f09000 	C:\Program Files\LG Software\On Screen Display\MgHookDll.dll
+0x6eba0000 - 0x6ecaf000 	C:\Windows\WinSxS\x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.762_none_0c178a139ee2a7ed\MFC80.DLL
+0x6e5e0000 - 0x6e5ec000 	C:\Windows\WinSxS\x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.762_none_43efccf17831d131\MFC80KOR.DLL
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: factory.panels.Application
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\QuickTime\QTSystem\QTJava.zip
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ESTsoft\ALZip;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\ESTsoft\ALZip;C:\Modeltech_pe_edu_10.0\win32pe_edu
+USERNAME=user
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6001 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 3142964k(871216k free), swap 6489852k(3901952k free)
+
+vm_info: Java HotSpot(TM) Client VM (19.1-b02) for windows-x86 JRE (1.6.0_24-b07), built on Feb  2 2011 17:44:41 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Sun Apr 24 19:28:44 2011
+elapsed time: 364 seconds
+

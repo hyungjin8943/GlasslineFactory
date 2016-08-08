@@ -1,0 +1,21 @@
+*******************************************************
+Requirement 1 Documentation
+CSCI 200/201, Tuesday 1, Spring 2011
+*******************************************************
+
+----------------------------------------------
+I. The scenario
+----------------------------------------------
+GlassRobot picks up glass from the Bins and gives it to the conveyor, which will pass it to a MockGuiPart
+
+
+----------------------------------------------
+II. How to run it
+----------------------------------------------
+1. Go to package factory.gui.Requirement1, and run RequirementTwo.java's main
+2. Press the "Pick Glass" button to start the animation.
+
+----------------------------------------------
+III. Bugs
+----------------------------------------------
+1. Sensors don't really work here. Will investigate later.

@@ -1,0 +1,22 @@
+*******************************************************
+Version 1 Documentation
+CSCI 200/201, Tuesday 1, Spring 2011
+*******************************************************
+
+----------------------------------------------
+I. The scenario
+----------------------------------------------
+The whole factory combined
+
+----------------------------------------------
+II. How to run it
+----------------------------------------------
+1. Start Application.java
+
+----------------------------------------------
+III. Bugs
+----------------------------------------------
+1. It so far works for 1. Sometimes the GlassRobot does not drop off to the 1st conveyor correctly. If that happens restart.
+2. The third piece won't get picked up by the GlassRobot.
+3. The factory does not really work for multiple glasses at a time (more than 3). 
+4. Sometimes stations are not performing as desired.

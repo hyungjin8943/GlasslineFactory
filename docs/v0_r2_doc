@@ -1,0 +1,22 @@
+*******************************************************
+Requirement 2 Documentation
+CSCI 200/201, Tuesday 1, Spring 2011
+*******************************************************
+
+----------------------------------------------
+I. The scenario
+----------------------------------------------
+Glass comes from conveyor to popup to a workstation, back to the popup and to the next conveyor, which will transfer it to a MockGuiPart
+
+----------------------------------------------
+II. How to run it
+----------------------------------------------
+1. Go to package factory.gui, and run RequirementTwo.java's main
+2. Press the "Create Glass" button to start the animation.
+
+----------------------------------------------
+III. Bugs
+----------------------------------------------
+1. It will pass one for sure, but on the second one, since we included v1 issues, it might not work (depending on where 
+the button was pressed).
+2. The program will lock up if you click on the "Create Glass" button when the glass hits the sensor. This issue is being investigated.
